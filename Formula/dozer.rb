@@ -27,7 +27,7 @@ class Dozer < Formula
   
   test do
     shell_output("dozer --help")
-    assert_match "____   ___ __________ ____\n|  _ \\ / _ \\__  / ____|  _ \\\n| | | | | | |/ /|  _| | |_) |\n| |_| | |_| / /_| |___|  _ <\n|____/ \\___/____|_____|_| \\_\\\n \n Open-source platform to build, publish and manage blazing-fast real-time data APIs in minutes. \n\nIf no sub commands are passed, dozer will bring up both app and api services.\n\n\nUsage: dozer [OPTIONS] [COMMAND]\n\nCommands:\n  configure  Interactive REPL for configuring sources and schemas\n  migrate    Initialize and lock schema definitions. Once intiialized, schemas cannot be changed.\n  clean      Clean home directory\n  api        Run Api Server\n  app        Run App Server\n  connector  Show Sources\n  init       Initalize an app using a template.\n  help       Print this message or the help of the given subcommand(s)\n\nOptions:\n  -c, --config-path <CONFIG_PATH>  [default: ./dozer-config.yaml]\n  -h, --help                       Print help\n  -V, --version                    Print version\n", shell_output("#{bin}/dozer --help")
+    assert_match "dozer 0.1.10", shell_output("#{bin}/dozer -V")
   end
 end
 

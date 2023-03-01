@@ -26,8 +26,8 @@ class Dozer < Formula
   end
   
   test do
-    shell_output("Running dozer --help")
-    exec dozer --help
+    shell_output("dozer --help")
+    exec bin/"dozer" --help
   end
 end
 

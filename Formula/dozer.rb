@@ -4,7 +4,7 @@ class Dozer < Formula
   version "0.1.10"
   
   depends_on "openssl"
-  depends_on "protoc"
+  depends_on "protobuf"
   
   on_macos do
     on_arm do

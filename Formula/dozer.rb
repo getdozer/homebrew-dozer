@@ -27,7 +27,7 @@ class Dozer < Formula
   
   test do
     shell_output("dozer --help")
-    run [bin/"dozer", "--help"]
+    system "dozer", "--help"
   end
 end
 

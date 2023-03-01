@@ -3,6 +3,9 @@ class Dozer < Formula
   homepage "https://github.com/getdozer/dozer"
   version "0.1.10"
   
+  depends_on "openssl"
+  depends_on "protoc"
+  
   on_macos do
     on_arm do
       url "https://github.com/getdozer/homebrew-dozer/releases/latest/download/dozer-mac.tar.gz"

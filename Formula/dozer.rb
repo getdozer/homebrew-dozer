@@ -26,7 +26,7 @@ class Dozer < Formula
   end
   
   test do
-    dozer -h
+    shell_output("dozer --help")
   end
 end
 

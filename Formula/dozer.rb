@@ -21,5 +21,9 @@ class Dozer < Formula
   def install
     bin.install "dozer"
   end
+  
+  test do
+    shell_output("dozer -h")
+  end
 end
 

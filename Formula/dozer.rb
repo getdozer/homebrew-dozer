@@ -27,7 +27,7 @@ class Dozer < Formula
   
   test do
     shell_output("dozer --help")
-    assert_match "dozer 0.1.11", shell_output("#{bin}/dozer -V")
+    assert_match "dozer #{version}", shell_output("#{bin}/dozer -V")
   end
 end
 

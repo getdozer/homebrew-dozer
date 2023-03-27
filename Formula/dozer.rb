@@ -8,11 +8,11 @@ class Dozer < Formula
   
   on_macos do
     on_arm do
-      url "https://github.com/getdozer/dozer/releases/latest/download/dozer-macos-arm64-v#{version}.tar.gz"
+      url "https://github.com/getdozer/dozer/releases/download/v#{version}/dozer-macos-arm64-v#{version}.tar.gz"
       sha256 "1257f7bf783e05bb7d924c58bdcb951d6906f27f946f3a8df955a7e56c2c5ac7"
     end
     on_intel do
-      url "https://github.com/getdozer/dozer/releases/latest/download/dozer-macos-amd64-v#{version}.tar.gz"
+      url "https://github.com/getdozer/dozer/releases/download/v#{version}/dozer-macos-amd64-v#{version}.tar.gz"
       sha256 "e4d266ac7d966b88b5e0fa357a93398b569514dab1ff46dca9e8b77bca27ee92"
     end
   end

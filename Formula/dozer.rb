@@ -1,18 +1,18 @@
 class Dozer < Formula
   desc "Open-source low code platform that lets you build data apps in minutes"
   homepage "https://github.com/getdozer/dozer"
-  version "0.1.17"
+  version "0.1.18"
   
   depends_on "protobuf"
   
   on_macos do
     on_arm do
       url "https://github.com/getdozer/dozer/releases/download/v#{version}/dozer-macos-aarch64.tar.gz"
-      sha256 "33394b70e3f81067ec0508f693171ce5923a6ea6e7d68360a19f838a2d315fc0"
+      sha256 "d79aef426fb0e32cd1ee78f83c6c7f55872782da6e1130fca5dee3a66eb3a8fd"
     end
     on_intel do
       url "https://github.com/getdozer/dozer/releases/download/v#{version}/dozer-macos-amd64.tar.gz"
-      sha256 "f1fef0e99ce18a34ac181b526b70ab563f63fec3858df6bc0f5069cf339b09b7"
+      sha256 "136603e60c46556ee26611b8f3cbc6a47a23de493ab357ad9f6aada98efea104"
     end
   end
   

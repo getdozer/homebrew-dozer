@@ -1,7 +1,7 @@
 class Dozer < Formula
   desc "Open-source low code platform that lets you build data apps in minutes"
   homepage "https://github.com/getdozer/dozer"
-  version "0.1.39"
+  version "0.2.0"
   
   depends_on "protobuf"
   

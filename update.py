@@ -36,6 +36,10 @@ for asset_name in ['dozer-macos-aarch64.tar.gz', 'dozer-macos-amd64.tar.gz']:
         if asset['name'] == asset_name:
             asset_url = asset['browser_download_url']
             break
+    
+    if asset_url is None:
+        print(f'Could not find {asset_name} in latest release')
+        continue
 
     # Calculate new SHA256
     new_sha256 = calculate_sha256(asset_url)
